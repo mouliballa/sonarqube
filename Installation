@@ -1,3 +1,4 @@
+
 ====SOANR 900 port
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.1.zip
 sudo unzip sonarqube-7.6.zip -d /opt/sonar79
@@ -19,3 +20,4 @@ alternatives --config java
 # ../logs/es_hs_err_pid7913.log
 
 https://thegeeksalive.com/how-to-install-sonarqube-on-centos/ 
+system need more ram and elastic search has to start
