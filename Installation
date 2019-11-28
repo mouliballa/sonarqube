@@ -1,0 +1,21 @@
+====SOANR 900 port
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.9.1.zip
+sudo unzip sonarqube-7.6.zip -d /opt/sonar79
+move to etc 
+sudo bash  /etc/sonar/bin/linux-x86-64/sonar.sh start 
+
+export PATH="your-dir:$PATH"
+
+sonar need java 11 " WrapperSimpleApp: Encountered an error running main: java.lang.IllegalStateException: SonarQube requires Java 11+ to run"
+need java 11 version
+sudo amazon-linux-extras install java-openjdk11
+sudo yum install java-1.8.0-openjdk
+java -version
+alternatives --config java
+====
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 449642496 bytes for committing reserved memory.
+# An error report file with more information is saved as:
+# ../logs/es_hs_err_pid7913.log
+
+https://thegeeksalive.com/how-to-install-sonarqube-on-centos/ 
